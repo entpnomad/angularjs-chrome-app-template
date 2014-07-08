@@ -7,5 +7,5 @@ Includes full Bootstrap SCSS files, a styles.scss file and a pre-configured conf
 
 TO DO:
 
-- Include JADE folder with .jade templates and html output in TEMPLATES folder.
-- Include a FONTS folder, although use of Google Fonts API is preferred.
+- Include .jade templates in JADE folder which output to TEMPLATES folder.
+- Include Google Fonts API with a SANS font (3 weights).
