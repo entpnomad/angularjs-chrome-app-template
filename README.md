@@ -8,12 +8,9 @@ Includes full Bootstrap SCSS files, a style.scss file and a pre-configured confi
 <br>Includes the following NodeJS modules: Grunt, Jade, Compass & UglifyJS and HTMLmin.
 <br>Includes automated compilation/compression tasks.
 
-<b>INSTRUCTIONS:</b>
-<br>1. Download the repository
-<br>2. In your console, navigate to the app folder. Example:
-```shell
-cd sites/angularjs-chrome-app-template/
-```
+<h3>INSTRUCTIONS:</h3>
+<br>1. Install NodeJS and NPM
+<br>2. Download the repository and navigate to the app folder. 
 <br>3. Run the following commands to install NodeJS modules:
 ```shell
 npm install -g grunt-cli
@@ -27,6 +24,7 @@ npm install grunt-contrib-watch --save-dev
 ```shell
 grunt watch
 ```
+<br>5. Start developing!
 
 <b>TO DO:</b>
 <br>1. Include Google Fonts API with a SANS font (3 weights).
