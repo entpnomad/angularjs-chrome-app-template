@@ -1,4 +1,12 @@
+@import "variables";
+// @import "mixins";
+
 /* TESTING CUSTOM STYLES */
+body{
+	font-family: $roboto;
+	font-weight: $normal;
+}
+
 .container{
     color:blue;
 }

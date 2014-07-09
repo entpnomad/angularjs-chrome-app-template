@@ -1,7 +1,7 @@
 angularjs-chrome-app-template
 =============================
 
-A Chrome App which uses AngularJS as an MVC Framework. Includes full Bootstrap SCSS files.
+A Chrome App which uses AngularJS as an MVC Framework. Includes full Bootstrap SCSS files and Roboto Font from Google Font API.
 
 Includes a demo style.scss file and index.jade file as templates. SCSS files will compile as CSS stylesheets and JADE files will compile as compressed HTML files.
 
@@ -25,6 +25,3 @@ npm install grunt-contrib-watch --save-dev
 grunt
 ```
 <br>5. Start developing!
-
-<b>TO DO:</b>
-<br>1. Include Google Fonts API with a SANS font (3 weights).
