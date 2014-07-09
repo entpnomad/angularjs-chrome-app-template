@@ -4,8 +4,9 @@ angularjs-chrome-app-template
 A Chrome App which uses AngularJS as an MVC Framework.
 
 Includes full Bootstrap SCSS files, a style.scss file and a pre-configured config.rb output.
-Includes .jade templates in JADE folder which output to VIEWS folder.
-Includes Grunt tasks: compile Jade, compile SCSS & Uglify JS
+Includes .jade templates in JADE folder which output to HTML folder.
+Includes the following NodeJS modules: Grunt, Jade, Compass & UglifyJS and HTMLmin.
+Includes automated compilation/compression tasks which are executed by running "grunt".
 
 <b>INSTRUCTIONS:</b>
 <br>1. Download the repository
