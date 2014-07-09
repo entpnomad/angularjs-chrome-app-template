@@ -8,10 +8,11 @@ Includes full Bootstrap SCSS files, a style.scss file and a pre-configured confi
 <br>Includes the following NodeJS modules: Grunt, Jade, Compass & UglifyJS and HTMLmin.
 <br>Includes automated compilation/compression tasks.
 
-<h3>INSTRUCTIONS:</h3>
-<br>1. Install NodeJS and NPM
+<h2>INSTRUCTIONS:</h2>
+<p>1. Install NodeJS and NPM
 <br>2. Download the repository and navigate to the app folder. 
 <br>3. Run the following commands to install NodeJS modules:
+</p>
 ```shell
 npm install -g grunt-cli
 npm install grunt-contrib-uglify --save-dev
