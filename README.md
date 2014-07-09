@@ -10,8 +10,11 @@ Includes full Bootstrap SCSS files, a style.scss file and a pre-configured confi
 
 <b>INSTRUCTIONS:</b>
 <br>1. Download the repository
-<br>2. In your console, navigate to the app folder
-<br>3. Run the following commands:
+<br>2. In your console, navigate to the app folder. Example:
+```shell
+cd sites/angularjs-chrome-app-template/
+```
+<br>3. Run the following commands to install NodeJS modules:
 ```shell
 npm install -g grunt-cli
 npm install grunt-contrib-uglify --save-dev
@@ -19,7 +22,7 @@ npm install grunt-contrib-htmlmin --save-dev
 npm install grunt-contrib-compass --save-dev
 npm install grunt-contrib-jade --save-dev
 ```
-<br>4. Run the following command to compile/compress files:
+<br>4. Run Grunt to compile/compress files:
 ```shell
 grunt
 ```
