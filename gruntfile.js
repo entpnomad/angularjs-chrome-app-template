@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             files: [ {
               cwd: "jade",
               src: "**/*.jade",
-              dest: "views",
+              dest: "html",
               expand: true,
               ext: ".html"
             } ]
@@ -36,6 +36,17 @@ module.exports = function(grunt) {
           cssDir: 'css'
         }
       }
+    },
+    htmlmin: {                                     // Task
+      dist: {                                      // Target
+        options: {                                 // Target options
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {                                   // Dictionary of files
+          'views/index.html':   'html/index.html'     // 'destination': 'source'
+        }
+      }
     }
   });
 
@@ -43,8 +54,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
   // Default task(s).
-  grunt.registerTask('default', ['jade', 'compass', 'uglify']);
+  grunt.registerTask('default', ['jade', 'compass', 'uglify', 'htmlmin']);
 
 };
