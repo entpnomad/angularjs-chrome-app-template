@@ -23,7 +23,7 @@ npm install grunt-contrib-compass --save-dev
 npm install grunt-contrib-jade --save-dev
 npm install grunt-contrib-watch --save-dev
 ```
-<br>4. Run Grunt to compile/compress files:
+<br>4. Run Grunt Watch to watch for file modifications and compile/compress files:
 ```shell
 grunt watch
 ```
