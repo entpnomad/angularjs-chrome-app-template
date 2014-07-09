@@ -5,11 +5,12 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        mangle: false
       },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+      my_target: {
+        files: {
+          'js/app.min.js': ['js/app.js']
+        }
       }
     },
     jade: {
@@ -26,16 +27,24 @@ module.exports = function(grunt) {
               ext: ".html"
             } ]
         }
+    },
+    compass: {
+      dist: {
+        options: {
+          config: 'config.rb',
+          sassDir: 'scss',
+          cssDir: 'css'
+        }
+      }
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
+  // Load the plugins
+  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
-
-  // Compile JADE templates
-  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.registerTask('default', ['jade', 'compass', 'uglify']);
 
 };
