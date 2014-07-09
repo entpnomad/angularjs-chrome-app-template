@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'js/app.min.js': ['js/app.js']
+          'js/app.js': ['development/js/app.js']
         }
       }
     },
@@ -20,9 +20,9 @@ module.exports = function(grunt) {
                 pretty: true
             },
             files: [ {
-              cwd: "jade",
+              cwd: "development/jade",
               src: "**/*.jade",
-              dest: "html",
+              dest: "development/html",
               expand: true,
               ext: ".html"
             } ]
@@ -32,19 +32,19 @@ module.exports = function(grunt) {
       dist: {
         options: {
           config: 'config.rb',
-          sassDir: 'scss',
+          sassDir: 'development/scss',
           cssDir: 'css'
         }
       }
     },
-    htmlmin: {                                     // Task
-      dist: {                                      // Target
-        options: {                                 // Target options
+    htmlmin: {
+      dist: {
+        options: {
           removeComments: true,
           collapseWhitespace: true
         },
-        files: {                                   // Dictionary of files
-          'views/index.html':   'html/index.html'     // 'destination': 'source'
+        files: {
+          'views/index.html':   'development/html/index.html'     // 'destination': 'source'
         }
       }
     }

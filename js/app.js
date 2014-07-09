@@ -1,2 +1,1 @@
-/* TESTING CUSTOM SCRIPT */
-console.log('app.js loaded');
+console.log("app.js loaded");
