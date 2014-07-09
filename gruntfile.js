@@ -47,6 +47,39 @@ module.exports = function(grunt) {
           'views/index.html':   'development/html/index.html'     // 'destination': 'source'
         }
       }
+    },
+    watch: {
+      js: {
+        files: ['development/js/*.js'],
+        tasks: ['uglify'],
+        options: {
+          livereload: true
+        }
+      },
+      jade: {
+        files: ['development/jade/*.jade', 'development/jade/**/*.jade'],
+        tasks: ['jade'],
+        options: {
+          livereload: true
+        }
+      },
+      html: {
+        files: ['development/html/*.html'],
+        tasks: ['htmlmin'],
+        options: {
+          livereload: true
+        }
+      },
+      compass: {
+        files: ['development/scss/*.{scss,sass}'],
+        tasks: ['compass'],
+        options: {
+          livereload: true
+        }
+      },
+      gruntfile: {
+        files: ['Gruntfile.js']
+      }
     }
   });
 
@@ -55,8 +88,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['jade', 'compass', 'uglify', 'htmlmin']);
+  grunt.registerTask('default', ['jade', 'compass', 'uglify', 'htmlmin', 'watch']);
 
 };

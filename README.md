@@ -21,10 +21,11 @@ npm install grunt-contrib-uglify --save-dev
 npm install grunt-contrib-htmlmin --save-dev
 npm install grunt-contrib-compass --save-dev
 npm install grunt-contrib-jade --save-dev
+npm install grunt-contrib-watch --save-dev
 ```
 <br>4. Run Grunt to compile/compress files:
 ```shell
-grunt
+grunt watch
 ```
 
 <b>TO DO:</b>
