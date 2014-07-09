@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "AngularJS Chrome App Template",
   "description": "A Chrome App which uses AngularJS as an MVC Framework",
-  "version": "1.0",
+  "version": "1.0.0",
   "permissions": [
     "https://*/*",
     "http://*/*"
@@ -13,7 +13,7 @@
   "content_security_policy": "script-src 'self'; object-src 'self'",
   "app": {
     "launch": {
-        "local_path": "index.html"
+        "local_path": "views/index.html"
     }
   },
   "update_url": "http://clients2.google.com/service/update2/crx",
