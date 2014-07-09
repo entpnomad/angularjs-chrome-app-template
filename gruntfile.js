@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'js/app.js': ['development/js/app.js']
+          'resources/js/app.js': ['development/js/app.js']
         }
       }
     },
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
         options: {
           config: 'config.rb',
           sassDir: 'development/scss',
-          cssDir: 'css'
+          cssDir: 'resources/css'
         }
       }
     },

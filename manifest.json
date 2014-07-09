@@ -8,7 +8,7 @@
     "http://*/*"
   ],
   "background": {
-    "scripts": ["js/vendor/angular.min.js"]
+    "scripts": ["resources/js/vendor/angular.min.js"]
   },
   "content_security_policy": "script-src 'self'; object-src 'self'",
   "app": {
@@ -18,6 +18,6 @@
   },
   "update_url": "http://clients2.google.com/service/update2/crx",
   "icons": {
-    "128": "img/icon.png"
+    "128": "resources/img/icon.png"
   }
 }
