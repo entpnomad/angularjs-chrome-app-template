@@ -12,13 +12,17 @@ Includes full Bootstrap SCSS files, a style.scss file and a pre-configured confi
 <br>1. Download the repository
 <br>2. In your console, navigate to the app folder
 <br>3. Run the following commands:
-<br><i>npm install -g grunt-cli</i>
-<br><i>npm install grunt-contrib-uglify --save-dev</i>
-<br><i>npm install grunt-contrib-htmlmin --save-dev</i>
-<br><i>npm install grunt-contrib-compass --save-dev</i>
-<br><i >npm install grunt-contrib-jade --save-dev</i>
+```shell
+npm install -g grunt-cli
+npm install grunt-contrib-uglify --save-dev
+npm install grunt-contrib-htmlmin --save-dev
+npm install grunt-contrib-compass --save-dev
+npm install grunt-contrib-jade --save-dev
+```
 <br>4. Run the following command to compile/compress files:
-<br><i>grunt</i>
+```shell
+grunt
+```
 
 <b>TO DO:</b>
 <br>1. Include Google Fonts API with a SANS font (3 weights).
