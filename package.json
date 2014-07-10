@@ -1,6 +1,10 @@
 {
   "name": "angularjs-chrome-app-template",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angeldiazibarra/angularjs-chrome-app-template.git"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-compass": "^0.9.0",
