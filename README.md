@@ -8,17 +8,14 @@ Includes a demo style.scss file and index.jade file as templates. SCSS files wil
 Includes the following NodeJS modules: Grunt, Jade, Compass, UglifyJS, HTMLmin and Watch. Automated compilation/compression tasks have been created.
 
 <h2>INSTRUCTIONS:</h2>
-<p>1. Install NodeJS and NPM
-<br>2. Download the repository and navigate to the app folder
-<br>3. Run the following commands to install NodeJS modules:
-</p>
+<br>1. Install NodeJS with your favorite repository manager or download it <a href="http://nodejs.org/download/">here</a>
+<br>2. Download the repository
 ```shell
-npm install -g grunt-cli
-npm install grunt-contrib-uglify --save-dev
-npm install grunt-contrib-htmlmin --save-dev
-npm install grunt-contrib-compass --save-dev
-npm install grunt-contrib-jade --save-dev
-npm install grunt-contrib-watch --save-dev
+git clone https://github.com/angeldiazibarra/angularjs-chrome-app-template.git
+```
+<br>3. Run the following command to install NodeJS modules:
+```shell
+npm install
 ```
 <br>4. Run Grunt to watch for file modifications and compile/compress files:
 ```shell
